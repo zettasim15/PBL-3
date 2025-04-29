@@ -6,7 +6,7 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Selamat datan di home Zetta!</h1>
+    <h1>Selamat datang di home Zetta!</h1>
     <p>Anda adalah seorang programmer</p>
 </body>
 </html>
