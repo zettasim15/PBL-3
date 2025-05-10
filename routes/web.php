@@ -1,22 +1,28 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <?php
+<?php
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListBarangController;
+use App\Http\Controllers\AuthController; // pastikan AuthController diimport
 
 // Routing ke HomeController
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/contact', [HomeController::class, 'contact']);
+Route::get('/contact', [HomeController::class, 'contact']); // Cukup satu saja
 Route::get('/list-barang', [ListBarangController::class, 'tampilkan']);
-Route::get('/contact', [HomeController::class, 'contact']);
 
+// Route login POST
+Route::post('/login', [AuthController::class, 'login']); // Login handler
+// Route register POST
+Route::post('/register', [AuthController::class, 'register']); // Register handler
+
+// Route untuk tampilan login, register, dan lainnya
 Route::get('/login', function () {
     return view('login');
 });
 
 Route::get('/dashboard_member', function () {
     return view('dashboard');
-});
+})->middleware('auth'); // pastikan user sudah login
 
 Route::get('/schedule', function () {
     return view('schedule');
@@ -33,3 +39,10 @@ Route::get('/teams', function () {
 Route::get('/presence', function () {
     return view('presence');
 });
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+// Pastikan kamu menghapus route kontak duplikat
+// Route::get('/contact', [HomeController::class, 'contact']);
