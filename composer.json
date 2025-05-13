@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "$schema": "https://getcomposer.org/schema.json",
     "name": "laravel/laravel",
     "type": "project",
@@ -21,6 +22,28 @@
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
         "phpunit/phpunit": "^11.5.3"
+=======
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel/framework": "^9.19",
+        "laravel/sanctum": "^3.0",
+        "laravel/tinker": "^2.7"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "laravel/pint": "^1.0",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0"
+>>>>>>> efb363e (initial value)
     },
     "autoload": {
         "psr-4": {
@@ -46,6 +69,7 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
+<<<<<<< HEAD
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
@@ -53,6 +77,9 @@
         "dev": [
             "Composer\\Config::disableProcessTimeout",
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\" --names='server,queue,vite'"
+=======
+            "@php artisan key:generate --ansi"
+>>>>>>> efb363e (initial value)
         ]
     },
     "extra": {
@@ -65,10 +92,18 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
+<<<<<<< HEAD
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
+=======
+            "pestphp/pest-plugin": true
+>>>>>>> efb363e (initial value)
         }
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> efb363e (initial value)

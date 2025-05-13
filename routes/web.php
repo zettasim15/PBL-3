@@ -43,6 +43,3 @@ Route::get('/presence', function () {
 Route::get('/register', function () {
     return view('register');
 });
-
-// Pastikan kamu menghapus route kontak duplikat
-// Route::get('/contact', [HomeController::class, 'contact']);
