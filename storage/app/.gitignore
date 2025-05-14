@@ -1,0 +1,7 @@
+*
+<<<<<<< HEAD
+!private/
+=======
+>>>>>>> efb363e (initial value)
+!public/
+!.gitignore

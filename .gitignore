@@ -1,0 +1,41 @@
+<<<<<<< HEAD
+/.phpunit.cache
+=======
+>>>>>>> efb363e (initial value)
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+<<<<<<< HEAD
+/storage/pail
+=======
+>>>>>>> efb363e (initial value)
+/vendor
+.env
+.env.backup
+.env.production
+<<<<<<< HEAD
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+=======
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+>>>>>>> efb363e (initial value)
