@@ -6,7 +6,14 @@
     <title>Home</title>
 </head>
 <body>
+<<<<<<< HEAD
     <h1>Selamat datang di home Zetta!</h1>
     <p>Anda adalah seorang programmer</p>
 </body>
 </html>
+=======
+    <h1>Selamat datang di home Gadiza!</h1>
+    <p>Anda adalah seorang mahasiswa </p>
+</body>
+</html>
+>>>>>>> efb363e (initial value)
